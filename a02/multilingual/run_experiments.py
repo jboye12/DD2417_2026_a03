@@ -10,7 +10,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # --- Data Loading ---
 def load_data():
-    df = pd.read_csv("aligned_literature_en_es.csv")
+    df = pd.read_csv("data/aligned_literature_en_es.csv")
     en_model = KeyedVectors.load_word2vec_format("data/mini.en.vec")
     es_model = KeyedVectors.load_word2vec_format("data/mini.es.vec")
     return df, en_model, es_model
